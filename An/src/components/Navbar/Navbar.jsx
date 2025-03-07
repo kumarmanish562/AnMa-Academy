@@ -30,7 +30,7 @@ const Navbar = () => {
 
         </div>
         {/* CTA Button Section */}
-        {/* Mobile Hamburger Menu Section */}
+      
       </div>
     </nav>
   )
