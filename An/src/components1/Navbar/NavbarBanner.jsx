@@ -26,5 +26,4 @@ const NavbarBanner = () => {
     )
   );
 };
-
 export default NavbarBanner;
