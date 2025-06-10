@@ -1,8 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaComputer, FaBook } from "react-icons/fa6";
+import React from "react"; // Import React library
+import { motion } from "framer-motion"; // Import motion for animations
+import { FaComputer, FaBook } from "react-icons/fa6"; // Import icons
 
-const subjectList = [
+const subjectList = [ // List of subjects with icons, colors, and animation delays
   {
     id: 1,
     name: "Engineering",
@@ -61,12 +61,12 @@ const subjectList = [
   },
 ];
 
-const SubjectCard = () => {
+const SubjectCard = () => { // Define SubjectCard component
   return (
     <>
-      <div className="container py-14 md:py-24">
+      <div className="container py-14 md:py-24"> {/* Main container with padding */}
         {/* header section */}
-        <div className="space-y-4 p-6 text-center max-w-[600px] mx-auto mb-5">
+        <div className="space-y-4 p-6 text-center max-w-[600px] mx-auto mb-5"> {/* Header section */}
           <h1 className="uppercase font-semibold text-orange-500">
             Our tutor subjects
           </h1>
@@ -75,18 +75,18 @@ const SubjectCard = () => {
           </p>
         </div>
         {/* cards section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 "> {/* Cards grid */}
           {subjectList.map((subject) => {
             return (
               <motion.div
                 key={subject.id}
-                initial={{ opacity: 0, x: -200 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -200 }} // Initial animation state
+                whileInView={{ opacity: 1, x: 0 }} // Animate to visible
                 transition={{
                   type: "spring",
                   stiffness: 100,
                   delay: subject.delay,
-                }}
+                }} // Animation transition
                 className="border rounded-lg border-secondary/20 p-4 flex justify-start items-center gap-4 hover:!scale-105 hover:!shadow-xl duration-200 cursor-pointer"
               >
                 <div
@@ -108,4 +108,4 @@ const SubjectCard = () => {
   );
 };
 
-export default SubjectCard;
+export default SubjectCard; // Export SubjectCard component as default

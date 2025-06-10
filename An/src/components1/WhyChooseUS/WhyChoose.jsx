@@ -1,11 +1,11 @@
-import React from "react";
-import { GrYoga } from "react-icons/gr";
-import { FaDumbbell } from "react-icons/fa6";
-import { GiGymBag } from "react-icons/gi";
-import { motion } from "framer-motion";
-import { SlideLeft } from "../../utility/animation";
+import React from "react"; // Import React library
+import { GrYoga } from "react-icons/gr"; // Import yoga icon
+import { FaDumbbell } from "react-icons/fa6"; // Import dumbbell icon
+import { GiGymBag } from "react-icons/gi"; // Import gym bag icon
+import { motion } from "framer-motion"; // Import motion for animations
+import { SlideLeft } from "../../utility/animation"; // Import SlideLeft animation utility
 
-const WhyChooseData = [
+const WhyChooseData = [ // Array of reasons to choose the service
   {
     id: 1,
     title: "One-on-One Teaching",
@@ -40,7 +40,7 @@ const WhyChooseData = [
   },
 ];
 
-const WhyChoose = () => {
+const WhyChoose = () => { // Define WhyChoose component
   return (
     <div className="bg-[#0a192f] text-white"> {/* Dark blue background */}
       <div className="container py-24">
@@ -58,10 +58,10 @@ const WhyChoose = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {WhyChooseData.map((item) => (
             <motion.div
-              key={item.id} // Added key to avoid React warnings
-              variants={SlideLeft(item.delay)}
-              initial="hidden"
-              whileInView="visible"
+              key={item.id} // Unique key for each card
+              variants={SlideLeft(item.delay)} // Animation variant with delay
+              initial="hidden" // Initial animation state
+              whileInView="visible" // Animate to visible when in view
               className="space-y-4 p-6 rounded-xl shadow-lg bg-[#1e293b] hover:scale-105 transition duration-300"
             >
               {/* Icon Section */}
@@ -71,8 +71,8 @@ const WhyChoose = () => {
               >
                 <div className="text-2xl">{item.icon}</div>
               </div>
-              <p className="font-semibold">{item.title}</p>
-              <p className="text-sm text-gray-300">{item.desc}</p>
+              <p className="font-semibold">{item.title}</p> {/* Card title */}
+              <p className="text-sm text-gray-300">{item.desc}</p> {/* Card description */}
             </motion.div>
           ))}
         </div>
@@ -81,4 +81,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default WhyChoose; // Export WhyChoose component as default
