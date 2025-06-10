@@ -19,9 +19,9 @@ A modern, responsive landing page for AnMa Academy built with **React** and **Vi
 
 ## 🖼️ Preview
 
-![Hero Section](./src/assets/hero1.png)
-![Banner Example](./src/assets/bannerr.png)
-![Subject Example](./src/assets/subject.png)
+![Hero Section](./An//src/assets/hero1.png)
+![Banner Example](./An//src/assets/bannerr.png)
+![Subject Example](./An//src/assets/subject.png)
 
 ---
 
@@ -36,7 +36,7 @@ A modern, responsive landing page for AnMa Academy built with **React** and **Vi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AnMa-Academy_Frontend_landing_page.git
+   git clone https://github.com/kumarmanish562/AnMa-Academy_Frontend_landing_page.git
    cd AnMa-Academy_Frontend_landing_page/An
    ```
 
@@ -82,15 +82,15 @@ An/
 
 ### Hero Section
 
-![Hero Section](./src/assets/hero1.png)
+![Hero Section](./An/src/assets/hero1.png)
 
 ### Banner Section
 
-![Banner](./src/assets/bannerr.png)
+![Banner](./An//src/assets/bannerr.png)
 
 ### Subject Section
 
-![Subject](./src/assets/subject.png)
+![Subject](./An//src/assets/subject.png)
 
 ---
 
@@ -120,4 +120,4 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, please contact [mk8627121@gmail.com](mk8627121@gmail.com).
