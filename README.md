@@ -36,8 +36,8 @@ A modern, responsive landing page for AnMa Academy built with **React** and **Vi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/kumarmanish562/AnMa-Academy_Frontend_landing_page.git
-   cd AnMa-Academy_Frontend_landing_page/An
+   git clone https://github.com/kumarmanish562/AnMa-Academy.git
+   cd AnMa-Academy/An
    ```
 
 2. **Install dependencies:**
